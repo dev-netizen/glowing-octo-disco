@@ -24,6 +24,6 @@ module.exports = (logSources, printer) => {
       minHeap.insertElement({ log: nextLog, source }); // Get the next log from corresponding source
     }
   }
-
+  printer.done()
   return console.log("Sync sort complete.");
 };

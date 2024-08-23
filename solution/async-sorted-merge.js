@@ -22,7 +22,7 @@ module.exports = async (logSources, printer) => {
     const { log } = minHeap.popMin();
     printer.print(log);
   }
-
+  printer.done()
   return new Promise((resolve, reject) => {
     resolve(console.log("Async sort complete."));
   });
